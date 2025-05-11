@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - HTML</title>
+    <style>
+        #html{
+            background-color: #4CAF50;
+            margin: 0;
+            padding: 18px;
+            display: block;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin: 0;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 800%;
+            /* height: 58vh; */
+            max-height: fit-content;
+            max-width: 500px;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 51px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #e53935;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .subscription-label {
+            margin-right: 20px;
+        }
+
+        .terms {
+            font-size: 14px;
+            color: #555;
+        }
+
+        u {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        i {
+            font-style: italic;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            form {
+                padding: 20px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Forms in html</h1> -->
+    <form action="/submit.php">
+        <div id="html"><h1>HTML Forms</h1></div>
+        <br>
+        <div>
+            <label for= "name">Name: </label>
+            <input id="name" type="text" placeholder="Enter Name" required>    
+        </div>
+        <div>
+            <label for="phone">phone: </label>
+            <input id="phone" type="tel" placeholder="Enter Phone no." required>    
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Enter Email" required>    
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input id="password" type="password" placeholder="Enter Password" required>    
+        </div>
+        <div>
+            <label for="dob">Date of Birth: </label>
+            <input id="dob" type="date" placeholder="Enter Date of Birth">    
+        </div>
+        <div>
+            <label for="gender">Gender: </label>
+            <select id="gender" required>
+                <option value="" disabled selected>Swlect Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p>Subscription Plan</p>
+            <input id="basic" type="radio" name="Subscription" value="basic">
+            <label for="basic" >Basic</label><!--name attr is for groupping to 1 element of form-->
+            
+            <input type="radio" id="premium" name="Subscription" value="premium">
+            <label for="premium">Premium</label>
+            
+            <input type="radio" id="vip" name="Subscription" value="vip">
+            <label for="vip">VIP</label><!--for attri is to associate click on text of vip-->
+        </div>
+        <div>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the <u><i>terms and condions</i></u></label>
+        </div>
+        <div>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear all</button>
+        </div>
+        
+        
+    </form>
+</body>
+</html>
+
+
+

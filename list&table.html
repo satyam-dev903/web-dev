@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists - HTML Tutorial</title>
+    <style>
+        body{
+            background-image: url("jarvis_gif.gif");
+            color: white;
+        }
+        /* General Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Removes space between cells */
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for contrast */
+        }
+
+        /* Table Header Styling */
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd; /* Light gray border for cells */
+        }
+
+        th {
+            background-color: #f44336; /* Zomato's red color for header */
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9; /* Light gray background for cells */
+        }
+
+        /* Row Hover Effect */
+        tr:hover {
+            background-color: #f1f1f1; /* Slightly darker gray when hovering */
+        }
+
+        /* Even Row Styling */
+        tr:nth-child(even) td {
+            background-color: #f3f3f3; /* Slightly lighter gray for even rows */
+        }
+
+        /* Caption Styling (if you add a caption) */
+        caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #f1eaea;
+        }
+
+        /* Responsive Table for Mobile */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lists in HTML</h1>
+    <!-- ordered list -->
+     <hr>
+    <h3>steps to bake cake</h3> 
+    <ol>
+        <li>Preheat your Oven. Preheating the oven is one of the most important, and often overlooked, steps when baking cakes</li>
+        <li>Select the Perfect Tin</li>
+        <li>Follow the Recipe for Ingredient Temperatures.</li>
+        <li>Mix Thoroughly.</li>
+        <li>Let Your Cakes Cool Completely.</li>
+    </ol>
+    <!-- unordered list -->
+    <h3>Unordered list</h3>
+    <ul>
+        <li>Preheat your Oven. Preheating the oven is one of the most important, and often overlooked, steps when baking cakes</li>
+        <li>Select the Perfect Tin</li>
+        <li>Follow the Recipe for Ingredient Temperatures.</li>
+        <li>Mix Thoroughly.</li>
+        <li>Let Your Cakes Cool Completely.</li>
+
+    </ul>
+    <!-- definition list-->
+     <dl>
+        <dt>Python</dt><!--definition term-->
+        <dd>a high level language</dd><!--definition data-->
+        <dt>html</dt>
+        <dd>for web dev</dd>
+        <dt>CSS</dt>
+        <dd>for web designing</dd>
+     </dl>
+     <hr>
+     <!--****************************************************-->
+     <h1>Tables - HTML</h1>
+     <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>role</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>harry</td>
+                <td>software dev</td>
+                <td>18500</td>
+            </tr>
+            <tr>
+                <td>satyam</td>
+                <td>Python dev</td>
+                <td>19500</td>
+            </tr>
+            <tr>
+                <td>ashoke</td>
+                <td>web dev</td>
+                <td>12500</td>
+            </tr>
+            <tr>
+                <td >Thanks</td>
+                <td colspan="3">You</td>
+            </tr>
+        </tbody>
+     </table>
+     
+
+</body>
+</html>
