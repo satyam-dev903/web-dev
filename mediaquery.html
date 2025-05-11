@@ -1,0 +1,55 @@
+<!-- V31 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media not|only mediatype and 
+        (expression) {
+        CSS code;
+        } */
+        body{
+            background-color: red;
+        }
+        @media only screen and (max-width:900px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation:landscape){
+            .box{
+                border: 8px solid black;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        i am red body..
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>

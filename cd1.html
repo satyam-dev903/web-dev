@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div, span{
+            /* Element selectors */
+            background-color: rgba(23, 229, 143, 0.696);
+            color: rgb(17, 149, 230);
+        }  
+        .orange{
+            /* class selector */
+            background-color: rgb(17, 16, 124);
+        } 
+        #green{
+            /* id selector */
+            background-color: rgb(21, 199, 60);
+        }
+        div > article {
+            /* Chid selector */
+            background-color: magenta;
+            color: gold;
+        }
+        div article{
+            /* descendent selector */
+            background-color: magenta;
+            color: gold;
+        }
+        *{
+            /* universal selectors */
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: blueviolet;
+        }
+
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: rgba(132, 214, 205, 0.7);
+        }
+        a:hover{
+            color:  rgba(132, 214, 205, 0.7);
+        }
+        
+        </style>
+</head>
+<body>
+    
+    <div>
+        i am div
+        <p>
+            <article>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Hic nemo delectus, 
+            animi corrupti laborum at quod similique 
+            nobis! Quasi voluptates sunt fugit.    
+            </article>
+        </p>
+    </div>
+    <div id="green">
+        i am div
+    </div>
+    <div class="orange">
+        i am another div2
+    </div>
+    <a href="https://google.com">Go To Google</a>
+</body>
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables In CSS</title>
+    <style>
+        :root {
+            /* global variable hota hai.. */
+            --color: rgb(255, 251, 0);
+            --scolor: rgba(128, 128, 128, 0.353);
+            --defopa:0.6;
+            --bdr:8px;
+        }
+        
+        .nav {
+            position: sticky;
+            margin: 0;
+            top: 0;
+            background-color: var(--color);
+            padding: 2px;
+            border-radius: var(--bdr);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            opacity: var(--defopa);
+            font-family: cursive;
+            font-weight: bold;
+            padding-right: 20px;
+            list-style: none;
+        }
+
+        .container {
+            background-color: var(--scolor);
+            padding: 5%;
+            border-radius: var(--bdr);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta saepe dolore sed at nemo hic in assumenda.
+            Deserunt tempora asperiores repudiandae dolorem expedita.
+        </P>
+    </div>
+</body>
+
+</html>
